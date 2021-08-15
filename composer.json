@@ -1,0 +1,36 @@
+{
+  "name": "leadingsystems/merconis-jtl-connector",
+  "description": "An extension which connects Merconis with the JTL merchandise management system.",
+  "keywords": [
+    "merconis",
+    "leading systems",
+    "JTL"
+  ],
+  "type": "contao-bundle",
+  "license": "proprietary",
+  "require": {
+    "php": "^7.2",
+    "contao/core-bundle": "~4.9",
+    "leadingsystems/contao-merconis": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LeadingSystems\\MerconisJTLConnectorBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  },
+  "extra": {
+    "contao-manager-plugin": "LeadingSystems\\MerconisJTLConnectorBundle\\ContaoManager\\Plugin",
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
